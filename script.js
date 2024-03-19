@@ -48,6 +48,20 @@ function uploadLogo() {
   const file = fileInput.files[0];
 
   if (file) {
+    // Check if the file type is either "image/png" or "image/jpeg"
+    if (!file.type.includes("image/png") && !file.type.includes("image/jpeg")) {
+      // Display an error message
+      alert("Please select a PNG or JPEG image file.");
+      return;
+    }
+
+    // Check if the file size exceeds 5MB (in bytes)
+    if (file.size > 5 * 1024 * 1024) {
+      // Display an error message
+      alert("File size cannot exceed 5MB.");
+      return;
+    }
+
     // Display loader icon while the file is being read
     icon.src = "./assets/loader_icon.svg";
 
