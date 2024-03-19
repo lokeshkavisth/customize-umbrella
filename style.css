@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+
+  /* Colors */
+  --bg-main: #14bdeb4d;
+  --bg-secondary: #14bdeb;
+
+  /* font sizes */
+  --fs-100: 0.625rem;
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.5rem;
+  --fs-800: 2rem;
+  --fs-900: 4rem;
+
+  /* font weight */
+  --fw-normal: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+}
+
+* {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  font: inherit;
+  font-family: var(--font-family);
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+img,
+data,
+span,
+input,
+button,
+select,
+ion-icon,
+textarea,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+button,
+select,
+textarea {
+  background: none;
+  font-size: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+button {
+  max-width: max-content;
+}
+
+button,
+.btn {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  font-weight: var(--fw-medium);
+  background: var(--bg-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+address {
+  font-style: normal;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+body {
+  font-size: inherit;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: baseline;
+  background: var(--bg-main);
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.409rem;
+}
+::-moz-scrollbar {
+  width: 0.409rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: var(--bg-secondary);
+}
+
+::-moz-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: var(--bg-secondary);
+}
+
+main {
+  display: grid;
+  margin-inline: auto;
+  min-height: 100vh;
+  max-width: 90rem;
+}
+
+main > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.umbrella {
+  width: 20rem;
+}
+
+.left-container {
+  position: relative;
+}
+
+.left-container #logo {
+  position: absolute;
+  bottom: 1rem;
+  left: 45%;
+  width: 3rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.theme-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-buttons button {
+  width: 2rem;
+  height: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--bg-main);
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#theme-1 {
+  background: blue;
+}
+#theme-2 {
+  background: pink;
+}
+#theme-3 {
+  background: yellow;
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-800);
+}
+
+#upload {
+  display: none;
+}
+
+.upload_btn {
+  text-align: center;
+  position: relative;
+}
+
+.upload_btn img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.upload-text {
+  padding-left: 1rem;
+}
+
+.upload-guide {
+  font-size: var(--fs-300);
+  margin-top: 0.4rem;
+}
+
+h3 {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-medium);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    min-height: 100vh;
+    max-width: 100%;
+  }
+
+  main > section {
+    flex-direction: column;
+  }
+}

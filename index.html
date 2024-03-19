@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- SEO tags -->
+    <meta
+      name="description"
+      content="Customize your own umbrella with a logo"
+    />
+    <meta name="keywords" content="custom umbrella, logo, design" />
+    <meta name="author" content="Lokesh Sharma" />
+    <meta name="robots" content="index, follow" />
+    <title>Custom Umbrella</title>
+  </head>
+  <body>
+    <!-- Main container for the page -->
+    <main>
+      <section>
+        <!-- Left container for the umbrella and logo -->
+        <section class="left-container">
+          <!-- Display the umbrella -->
+          <img
+            class="umbrella"
+            src="./assets/Blue umbrella.png"
+            alt="Umbrella"
+          />
+
+          <!-- Container for the logo -->
+          <div class="logo-container"></div>
+        </section>
+
+        <!-- Right container for the customization options -->
+        <section class="right-container">
+          <!-- Heading for the customization section -->
+          <h2>Custom Umbrella</h2>
+
+          <!-- Container for the theme buttons -->
+          <div class="theme-buttons">
+            <!-- Theme buttons for different colors -->
+            <button
+              id="theme-1"
+              data-theme="#14BDEB"
+              aria-label="Select blue theme"
+            />
+            <button
+              id="theme-2"
+              data-theme="#E899DC"
+              aria-label="Select pink theme"
+            />
+            <button
+              id="theme-3"
+              data-theme="#FDE74C"
+              aria-label="Select yellow theme"
+            />
+          </div>
+
+          <!-- Heading for the customization instructions -->
+          <h3>Custmize your umbrella</h3>
+          <div>
+            <!-- Instructions for uploading a logo -->
+            <p>Upload a logo for an instant preview.</p>
+            <p class="upload-guide">
+              .png and .jpg files only. Max file size is 5MB.
+            </p>
+          </div>
+          <!-- Label for the file upload input -->
+          <label class="btn upload_btn" for="upload">
+            <!-- File upload input -->
+            <input
+              type="file"
+              name="upload"
+              id="upload"
+              class="btn"
+              accept="image/png, image/jpeg"
+              aria-label="Upload logo"
+            />
+            <!-- Icon for the upload button -->
+            <div>
+              <img src="./assets/upload_icon.svg" alt="Upload logo" id="icon" />
+            </div>
+            <!-- Text for the upload button -->
+            <span class="upload-text">UPLOAD LOGO</span>
+          </label>
+        </section>
+      </section>
+    </main>
+    <!-- JavaScript module for the functionality -->
+    <script type="module" defer src="./index.js" />
+  </body>
+</html>
